@@ -4,7 +4,7 @@ public class payload {
 
 	
 	public static String AddPlace()
-	
+ 
 	{
 		return "{\r\n" + 
 				"  \"location\": {\r\n" + 
