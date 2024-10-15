@@ -2,6 +2,7 @@ package DemoRestApi.DemoRestApi;
 
 
 import io.restassured.RestAssured;
+import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 
 import static io.restassured.RestAssured.*;
