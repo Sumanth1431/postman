@@ -2,6 +2,8 @@ package DemoRestApi.DemoRestApi;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
+import pojo.GetCourse1;
+
 import static io.restassured.RestAssured.*;
 
 public class OAuthTest {
@@ -18,10 +20,12 @@ public class OAuthTest {
 		String accesstoken = js.getString("access_token");
 		
 		
-		String response2 = given().queryParam("access_token", accesstoken)
+		GetCourse1 gc = given().queryParam("access_token", accesstoken)
 		.when().get("https://rahulshettyacademy.com/oauthapi/getCourseDetails")
-		.asString();
-		System.out.println(response2);
+		.as(GetCourse1.class);
+		//System.out.println(response2);
+		System.out.println(gc.getLinkedIn());
+		System.out.println(gc.getcourses().getApi().get(1).getCourseTitle());
 
 	}
 
