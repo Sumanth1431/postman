@@ -9,4 +9,5 @@ import io.cucumber.junit.CucumberOptions;
 public class TestRunner {
 //tags= {"@DeletePlace"}  compile test verify
 	//testing
+	//testimg
 }
