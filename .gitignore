@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /.metadata/
 /ApiFramework1/
 /CucumberFramework01/
@@ -5,3 +6,6 @@
 /eclipse-workspace123.zip
 /RestApi/
 /RestApi/
+=======
+/target/
+>>>>>>> origin/master
